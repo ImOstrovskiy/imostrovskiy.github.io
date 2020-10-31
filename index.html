@@ -53,6 +53,24 @@
 
 						<!-- projects -->
 							<article id="forecast">
+									<script src="dist/InstagramFeed.min.js"></script>
+<script>
+    (function(){
+        new InstagramFeed({
+            'username': 'hpfk_voice',
+            'container': document.getElementById("instagram-feed2"),
+            'display_profile': false,
+            'display_biography': false,
+            'display_gallery': true,
+            'callback': null,
+            'styling': true,
+            'items': 1,
+            'items_per_row': 1,
+            'margin': 1 
+	    'on_error': console.error
+        });
+    })();
+</script>	
 								<h2 class="major">Понедельник</h2>
 								<p><img src="forecast/1.png" alt="Понедельник"></p>
 								<h2 class="major">Вторник</h2>
@@ -348,6 +366,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+			<script src="dist/InstagramFeed.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
